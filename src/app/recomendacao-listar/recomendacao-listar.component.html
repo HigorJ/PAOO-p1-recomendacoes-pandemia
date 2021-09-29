@@ -1,0 +1,11 @@
+<div *ngIf="recomendacoes.length > 0; else nenhumaRecomendacao">
+    <ul class="list-group list-group-flush mt-2 p-2 border">
+        <li class="list-group-item" *ngFor="let recomendacao of recomendacoes">{{ recomendacao }}</li>
+    </ul>   
+</div>
+
+<ng-template #nenhumaRecomendacao>
+    <div class="d-flex justify-content-center text-primary">
+        Nenhuma recomendação encontrada :(
+    </div>
+</ng-template>

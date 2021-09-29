@@ -1,10 +1,8 @@
-<header>
-  <nav class="navbar bg-primary mb-2 text-primary text-light d-flex justify-content-center">
-    <h1>Recomendações da Pandemia - Covid 19</h1>
-  </nav>
-</header>
+<nav class="navbar bg-primary mb-2 text-primary text-light text-center">
+  <h1 class="w-100">Recomendações da Pandemia - Covid 19</h1>
+</nav>
 
-<div class="container">
+<div class="container h-100">
   <app-recomendacao-inserir (recomendacaoInserida)="onRecomendacaoInserida($event)"></app-recomendacao-inserir>
 
   <app-recomendacao-listar [recomendacoes]="recomendacoes"></app-recomendacao-listar>

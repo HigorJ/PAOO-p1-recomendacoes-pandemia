@@ -9,6 +9,6 @@ export class AppComponent {
   recomendacoes = [];
 
   onRecomendacaoInserida(recomendacao) {
-    this.recomendacoes = [...this.recomendacoes, recomendacao];
+    this.recomendacoes = [recomendacao, ...this.recomendacoes];
   }
 }
